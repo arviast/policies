@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — Arvia AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #101922;
+      --surface: #161F2C;
+      --border: #1e2d3d;
+      --accent: #258CF4;
+      --accent-soft: rgba(37,140,244,0.1);
+      --text: #ffffff;
+      --muted: #9ca3af;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: -200px; left: 50%;
+      transform: translateX(-50%);
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(37,140,244,0.07) 0%, transparent 70%);
+      pointer-events: none; z-index: 0;
+    }
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(16,25,34,0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 1.2rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.3rem; color: var(--text);
+      text-decoration: none; letter-spacing: 0.02em;
+    }
+    .logo span { color: var(--accent); }
+    nav a {
+      color: var(--muted); text-decoration: none;
+      font-size: 0.85rem; font-weight: 400;
+      letter-spacing: 0.05em; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--accent); }
+    main {
+      position: relative; z-index: 1;
+      max-width: 740px; margin: 0 auto;
+      padding: 5rem 2rem 6rem;
+    }
+    .page-label {
+      display: inline-block;
+      font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--accent); background: var(--accent-soft);
+      border: 1px solid rgba(37,140,244,0.25);
+      border-radius: 100px; padding: 0.3rem 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      color: var(--text); line-height: 1.15;
+      margin-bottom: 0.75rem; font-weight: 400;
+    }
+    .meta {
+      color: var(--muted); font-size: 0.85rem;
+      margin-bottom: 3.5rem; padding-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+    section {
+      margin-bottom: 1.5rem; padding: 2rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px; transition: border-color 0.3s;
+    }
+    section:hover { border-color: rgba(37,140,244,0.35); }
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem; font-weight: 400;
+      color: var(--text); margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.6rem;
+    }
+    h2::before {
+      content: ''; display: inline-block;
+      width: 6px; height: 6px;
+      background: var(--accent); border-radius: 50%; flex-shrink: 0;
+    }
+    p { color: var(--muted); font-size: 0.95rem; margin-bottom: 0.75rem; }
+    p:last-child { margin-bottom: 0; }
+    ul { list-style: none; margin: 0.5rem 0; padding: 0; }
+    ul li {
+      padding: 0.3rem 0 0.3rem 1.2rem;
+      position: relative; font-size: 0.95rem; color: var(--muted);
+    }
+    ul li::before { content: '–'; position: absolute; left: 0; color: var(--accent); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .contact-box {
+      background: var(--accent-soft);
+      border: 1px solid rgba(37,140,244,0.3);
+      border-radius: 12px; padding: 1.5rem 2rem;
+      margin-top: 2rem; text-align: center;
+    }
+    .contact-box p { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.4rem; }
+    .contact-box a { font-size: 1rem; font-weight: 500; }
+    footer {
+      text-align: center; padding: 2rem;
+      color: var(--muted); font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo">Arvia <span>AI</span></a>
+  <nav><a href="../terms/">Terms of Service</a></nav>
+</header>
+
+<main>
+  <div class="page-label">Legal</div>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: March 26, 2026 &nbsp;·&nbsp; Effective immediately</p>
+
+  <section>
+    <h2>Introduction</h2>
+    <p>Welcome to Arvia AI ("we," "our," or "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application and services.</p>
+    <p>By using Arvia AI, you agree to the collection and use of information in accordance with this policy.</p>
+  </section>
+
+  <section>
+    <h2>Information We Collect</h2>
+    <p>We may collect the following types of information:</p>
+    <ul>
+      <li>Account information (name, email address) when you register</li>
+      <li>Usage data and interactions with the app</li>
+      <li>Device information (device type, operating system, unique device identifiers)</li>
+      <li>Log data (IP address, app activity, crash reports)</li>
+      <li>Information you provide directly through the app</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How We Use Your Information</h2>
+    <p>We use the information we collect to:</p>
+    <ul>
+      <li>Provide, maintain, and improve our services</li>
+      <li>Personalize your experience with Arvia AI</li>
+      <li>Send you important updates and notifications</li>
+      <li>Respond to your comments and support requests</li>
+      <li>Monitor and analyze usage patterns to improve functionality</li>
+      <li>Detect and prevent fraudulent or unauthorized activity</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Data Sharing &amp; Disclosure</h2>
+    <p>We do not sell your personal data. We may share your information only in the following circumstances:</p>
+    <ul>
+      <li>With trusted service providers who assist in operating our app (under strict confidentiality)</li>
+      <li>If required by law, regulation, or legal process</li>
+      <li>To protect the rights, property, or safety of Arvia AI, our users, or the public</li>
+      <li>In connection with a merger, acquisition, or sale of assets (you will be notified)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Consent to Share Consumption Data with Apple</h2>
+    <p>By using our app and making in-app purchases, you consent to our sharing of data regarding your usage and consumption of purchased content with Apple, as part of our efforts to resolve refund requests. This information may include details about how you have accessed and interacted with the purchased content.</p>
+    <p>The purpose of sharing this data is to help Apple make an informed decision regarding refund requests. We ensure that such data sharing is done in compliance with Apple's policies and only as necessary to process your requests.</p>
+  </section>
+
+  <section>
+    <h2>Data Retention</h2>
+    <p>We retain your personal information only for as long as necessary to provide our services and fulfill the purposes outlined in this policy. You may request deletion of your account and associated data at any time by contacting us.</p>
+  </section>
+
+  <section>
+    <h2>Security</h2>
+    <p>We implement industry-standard security measures to protect your data, including encryption in transit and at rest. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+  </section>
+
+  <section>
+    <h2>Children's Privacy</h2>
+    <p>Arvia AI is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data, please contact us and we will delete it promptly.</p>
+  </section>
+
+  <section>
+    <h2>Your Rights</h2>
+    <p>Depending on your location, you may have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your personal data</li>
+      <li>Opt out of certain data processing activities</li>
+      <li>Data portability</li>
+    </ul>
+    <p>To exercise any of these rights, please contact us at the email below.</p>
+  </section>
+
+  <section>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the date at the top of this page and, where appropriate, through in-app notifications. We encourage you to review this policy periodically.</p>
+  </section>
+
+  <div class="contact-box">
+    <p>Questions about your privacy?</p>
+    <a href="mailto:support@arvia-ai.com">support@arvia-ai.com</a>
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Arvia AI &nbsp;·&nbsp; <a href="../terms/">Terms of Service</a> &nbsp;·&nbsp; arvia-ai.com
+</footer>
+
+</body>
+</html>
