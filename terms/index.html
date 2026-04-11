@@ -4,23 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Terms of Service — Arvia AI</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --bg: #101922;
-      --surface: #161F2C;
-      --border: #1e2d3d;
-      --accent: #258CF4;
-      --accent-soft: rgba(37,140,244,0.1);
+      /* Aligned with styles/theme.ts */
+      --bg: #080808;
+      --surface: #1a1a1a;
+      --border: rgba(255, 255, 255, 0.06);
+      --accent: #2979ff;
+      --accent-soft: rgba(41, 121, 255, 0.14);
       --text: #ffffff;
-      --muted: #9ca3af;
+      --muted: #888888;
     }
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 300;
+      font-family: 'Manrope', system-ui, sans-serif;
+      font-weight: 400;
       line-height: 1.8;
       min-height: 100vh;
     }
@@ -30,26 +31,29 @@
       top: -200px; left: 50%;
       transform: translateX(-50%);
       width: 600px; height: 600px;
-      background: radial-gradient(circle, rgba(37,140,244,0.07) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(41, 121, 255, 0.08) 0%, transparent 70%);
       pointer-events: none; z-index: 0;
     }
     header {
       position: sticky; top: 0; z-index: 100;
-      background: rgba(16,25,34,0.9);
+      background: rgba(8, 8, 8, 0.9);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       padding: 1.2rem 2rem;
       display: flex; align-items: center; justify-content: space-between;
     }
     .logo {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.3rem; color: var(--text);
-      text-decoration: none; letter-spacing: 0.02em;
+      font-family: 'Manrope', system-ui, sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: 0.02em;
     }
     .logo span { color: var(--accent); }
     nav a {
       color: var(--muted); text-decoration: none;
-      font-size: 0.85rem; font-weight: 400;
+      font-size: 0.85rem; font-weight: 500;
       letter-spacing: 0.05em; text-transform: uppercase;
       transition: color 0.2s;
     }
@@ -64,15 +68,16 @@
       font-size: 0.72rem; font-weight: 500;
       letter-spacing: 0.15em; text-transform: uppercase;
       color: var(--accent); background: var(--accent-soft);
-      border: 1px solid rgba(37,140,244,0.25);
+      border: 1px solid rgba(41, 121, 255, 0.26);
       border-radius: 100px; padding: 0.3rem 0.85rem;
       margin-bottom: 1.5rem;
     }
     h1 {
-      font-family: 'DM Serif Display', serif;
+      font-family: 'Manrope', system-ui, sans-serif;
       font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 700;
       color: var(--text); line-height: 1.15;
-      margin-bottom: 0.75rem; font-weight: 400;
+      margin-bottom: 0.75rem;
     }
     .meta {
       color: var(--muted); font-size: 0.85rem;
@@ -85,10 +90,10 @@
       border: 1px solid var(--border);
       border-radius: 12px; transition: border-color 0.3s;
     }
-    section:hover { border-color: rgba(37,140,244,0.35); }
+    section:hover { border-color: rgba(41, 121, 255, 0.34); }
     h2 {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.25rem; font-weight: 400;
+      font-family: 'Manrope', system-ui, sans-serif;
+      font-size: 1.25rem; font-weight: 600;
       color: var(--text); margin-bottom: 1rem;
       display: flex; align-items: center; gap: 0.6rem;
     }
@@ -109,7 +114,7 @@
     a:hover { text-decoration: underline; }
     .contact-box {
       background: var(--accent-soft);
-      border: 1px solid rgba(37,140,244,0.3);
+      border: 1px solid rgba(41, 121, 255, 0.32);
       border-radius: 12px; padding: 1.5rem 2rem;
       margin-top: 2rem; text-align: center;
     }
@@ -134,12 +139,19 @@
 <main>
   <div class="page-label">Legal</div>
   <h1>Terms of Service</h1>
-  <p class="meta">Last updated: March 26, 2026 &nbsp;·&nbsp; Effective immediately</p>
+  <p class="meta">Last updated: April 10, 2026 &nbsp;·&nbsp; Effective immediately</p>
 
   <section>
     <h2>Acceptance of Terms</h2>
     <p>By downloading, installing, or using the Arvia AI mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our App.</p>
-    <p>These Terms apply to all users of Arvia AI, including visitors, registered users, and others who access or use the service.</p>
+    <p>These Terms are between you and the <strong>operator</strong> of the Arvia AI service ("we," "us," "our"). The service is operated by an independent developer using the Arvia AI name; if we later form a registered company or assign these Terms to an entity, we will update this page.</p>
+    <p>These Terms apply to all users of Arvia AI, including visitors, registered users, and others who access or use the service. Our <a href="../privacy/">Privacy Policy</a> explains how we handle personal information and is incorporated by reference.</p>
+  </section>
+
+  <section>
+    <h2>Subscriptions &amp; In-App Purchases</h2>
+    <p>Paid features, if offered, are available only through <strong>in-app purchases</strong> processed by <strong>Apple</strong> (App Store) or <strong>Google</strong> (Google Play), depending on your device. We do not accept payment cards or other payment methods outside those platforms.</p>
+    <p>Your purchase is subject to the platform’s terms, billing, renewal, cancellation, and refund rules. For payment disputes and refunds, you must use the processes Apple or Google provides. We do not receive your full payment card details.</p>
   </section>
 
   <section>
@@ -174,14 +186,25 @@
   </section>
 
   <section>
+    <h2>AI Features &amp; Onboarding</h2>
+    <p>The App uses artificial intelligence (via third-party providers such as OpenAI) to personalize your experience. <strong>You do not submit free-form prompts.</strong> You only provide <strong>answers to the onboarding questions</strong> presented in the App. Those answers—and limited technical context needed to process them—may be sent to our AI and backend providers as described in our <a href="../privacy/">Privacy Policy</a>.</p>
+    <p>You grant us a license to use your onboarding responses to operate, improve, and secure the service, and to provide AI-generated content back to you.</p>
+  </section>
+
+  <section>
     <h2>AI-Generated Content</h2>
-    <p>Arvia AI uses artificial intelligence to generate content and responses. You acknowledge that:</p>
+    <p>Arvia AI uses artificial intelligence to generate content and responses based on your onboarding input. You acknowledge that:</p>
     <ul>
       <li>AI-generated content may not always be accurate or complete</li>
-      <li>You should not rely solely on AI output for important decisions</li>
+      <li>You should not rely solely on AI output for important decisions (including health, legal, or financial matters)</li>
       <li>We are not responsible for actions taken based on AI-generated content</li>
-      <li>Content generated through the App is subject to our usage policies</li>
+      <li>Outputs may not be unique; similar users may receive similar content</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>Third-Party Services</h2>
+    <p>The App relies on third-party infrastructure and services (for example, AI processing and cloud backend providers). Their availability and behavior may affect the App. We are not responsible for outages or changes imposed by those third parties beyond our reasonable control.</p>
   </section>
 
   <section>
@@ -208,7 +231,8 @@
 
   <section>
     <h2>Governing Law</h2>
-    <p>These Terms shall be governed by and construed in accordance with applicable laws. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts in the applicable jurisdiction.</p>
+    <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict-of-law rules that would require applying another jurisdiction’s law.</p>
+    <p>Any disputes arising under these Terms shall be resolved in the courts of competent jurisdiction as determined by applicable law. <strong>We may update this section</strong> with a specific country or region once a formal business entity and legal address are established.</p>
   </section>
 
   <div class="contact-box">
